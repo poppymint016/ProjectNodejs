@@ -1,6 +1,8 @@
 version: '3'
 services:
   app:
+    environment:
+      - MONGO_URI=mongodb+srv://phannita016:12345@cluster0.8tm9ww6.mongodb.net/Test?retryWrites=true&w=majority
     container_name: seed
     restart: always
     build: .
