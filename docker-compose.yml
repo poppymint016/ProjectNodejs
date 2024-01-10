@@ -2,6 +2,7 @@ version: '5.5'
 services:
   app:
     environment:
+      - TOKEN_KEY=phanni
       - API_PORT=3000
       - MONGO_URI=mongodb+srv://phannita016:12345@cluster0.8tm9ww6.mongodb.net/Test?retryWrites=true&w=majority
     container_name: seed
